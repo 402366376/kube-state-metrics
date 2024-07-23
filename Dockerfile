@@ -1,6 +1,7 @@
 ARG GOVERSION=1.22
 ARG GOARCH
-FROM golang:${GOVERSION} as builder
+ARG GOARCH=adm64
+FROM node:20.10 as builder
 ARG GOARCH
 ENV GOARCH=${GOARCH}
 WORKDIR /go/src/k8s.io/kube-state-metrics/
