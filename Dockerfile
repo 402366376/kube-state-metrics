@@ -1,2 +1,2 @@
-FROM portainer/portainer-ce:2.20.3
+FROM redis:7.4.2
 
